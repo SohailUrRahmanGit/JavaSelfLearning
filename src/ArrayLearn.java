@@ -4,5 +4,10 @@ public class ArrayLearn {
         System.out.println(cities[0]);
         System.out.println(cities[1]);
         System.out.println(cities[2]);
+
+        for(String eachCity: cities) {
+            System.out.println(eachCity);
+        }
+
     }
 }
