@@ -9,5 +9,14 @@ public class ArrayLearn {
             System.out.println(eachCity);
         }
 
+        double[] randomNumber = new double[10];
+
+        for(int i=0; i< randomNumber.length;i++) {
+            randomNumber[i] = Math.random();
+        }
+
+        for(double randomNum: randomNumber) {
+            System.out.println(randomNum);
+        }
     }
 }
