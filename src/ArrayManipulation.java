@@ -17,6 +17,11 @@ public class ArrayManipulation {
     }
 
     public static void main(String[] args) {
+
+         Student student1 = new Student();
+         student1.setStudent(1,"Sohail", "o+","29-11-1988");
+         student1.getDetails();
+
         int sum = 0;
         int [] arr = {100,200,300,101,202,303,404 };
         System.out.println(Arrays.toString(arr));
