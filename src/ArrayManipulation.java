@@ -1,6 +1,21 @@
 import java.util.Arrays;
 
 public class ArrayManipulation {
+
+     static void add(int x, int y) {
+        int sum = 0;
+        for(int i = x; i < y; i++ ) {
+            sum = sum + i;
+            System.out.println(sum);
+        }
+    }
+
+    static void addVarArg(int... x) {
+        for(int i = 0; i < x.length; i++ ) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         int sum = 0;
         int [] arr = {100,200,300,101,202,303,404 };
@@ -12,5 +27,12 @@ public class ArrayManipulation {
         }
 
         System.out.println("Sum of arr elements " +sum);
+
+        add(5,6);
+        add(100, 105);
+        add(1,10);
+
+        addVarArg(10,20,30);
+        addVarArg(10,10);
     }
 }
