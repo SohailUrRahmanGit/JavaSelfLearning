@@ -13,6 +13,7 @@ public class Student {
         dob = sdob;
     }
     public void getDetails() {
+        System.out.println(name + " "+id + " " + "" +bloodGroup);
         System.out.println(name);
         System.out.println(id);
         System.out.println(dob);
