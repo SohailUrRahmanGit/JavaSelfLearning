@@ -4,13 +4,15 @@ public class Student {
     String name; //instance
     String dob; // instance
     String bloodGroup;
-   static String university = "Standford";
+    University universityDetails;
+    static String university;
 
-    public void setStudent(int sId, String sname, String sbloodGroup, String sdob)  {  // local variables
+    public void setStudent(int sId, String sname, String sbloodGroup, String sdob, University uniDet)  {  // local variables
         name = sname;
         id = sId;
         bloodGroup = sbloodGroup;
         dob = sdob;
+        universityDetails = uniDet;
     }
     public void getDetails() {
         System.out.println(name + " "+id + " " + "" +bloodGroup);
@@ -18,7 +20,9 @@ public class Student {
         System.out.println(id);
         System.out.println(dob);
         System.out.println(bloodGroup);
-        System.out.println(university);
+        System.out.println(universityDetails.univName);
+        System.out.println(universityDetails.univID);
+
     }
 
 }

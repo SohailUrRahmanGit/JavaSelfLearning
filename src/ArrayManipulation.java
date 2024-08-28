@@ -19,7 +19,10 @@ public class ArrayManipulation {
     public static void main(String[] args) {
 
          Student student1 = new Student();
-         student1.setStudent(1,"Sohail", "o+","29-11-1988");
+         University university = new University();
+         university.univID = 200;
+         university.univName = "Vel tech";
+         student1.setStudent(1,"Sohail", "o+","29-11-1988",university);
          student1.getDetails();
 
         int sum = 0;
